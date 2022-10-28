@@ -474,6 +474,8 @@ footer img {
   border: 1px solid;
   margin: auto;
   box-sizing: border-box;
+  position: relative;
+  overflow: hidden;
 }
 #character{
   width: 100px;
