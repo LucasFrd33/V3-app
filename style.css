@@ -467,3 +467,74 @@ footer img {
   }
 }
 /*# sourceMappingURL=style.css.map */
+#game{
+  width: 300px;
+  height: 384px;
+  top: 50px;
+  border: 1px solid;
+  margin: auto;
+  box-sizing: border-box;
+}
+#character{
+  width: 100px;
+  height: 100px;
+  position: relative;
+  top: 186px;
+  left: 100px;
+
+}
+#character img{
+  height: 100px;
+  position: relative;
+  left: 25%;
+  top: -10%;
+  image-rendering: pixelated;
+  image-rendering: -moz-crisp-edges;
+  image-rendering: crisp-edges;
+}
+
+#block{
+  width: 100px;
+  height: 100px;
+  top: 350px;
+  position: relative;
+  animation: slide 1s infinite linear;
+}
+#block img{
+  height: 50px;
+  position: relative;
+  left: 25%;
+  top: 50%;
+  image-rendering: pixelated;
+  image-rendering: -moz-crisp-edges;
+  image-rendering: crisp-edges;
+}
+
+@keyframes slide{
+  0%{top: -100px;}
+  1000%{top: 500px;}
+}
+@keyframes slide2{
+  0%{top: -500px;}
+  1000%{top: 500px;}
+}
+#white{
+  width: 300px;
+  height: 600px;
+  position: relative;
+  top: 183px;
+  background-color: white;
+  z-index: 1;
+}
+
+#background img{
+  width: 300px;
+  height: 960px;
+  position: absolute;
+  z-index: -1;
+  image-rendering: pixelated;
+  image-rendering: -moz-crisp-edges;
+  image-rendering: crisp-edges;
+  top: 0px;
+  animation: slide2 1.5s infinite linear;
+}
